@@ -77,7 +77,8 @@ Git is a distributed version control system that tracks versions of files. It is
 
 | Week | Topic            | Link                                                                                                        |
 | ---- | ---------------- | ----------------------------------------------------------------------------------------------------------- |
-| 2    | 📝 Markdown      | [Markdown Assignment](0-getting-ready/markdown-assignment.md)                                               |
+| 1   | 📝 Course Introduction and Command Line Interface|
+| 2    | 📝 Git and Github |
 | 3    | 🌐 HTML          | [HTML Assignment #1](1-html-css/basics/assignment-1.md)                                                     |
 | 4    | 🎨 CSS           | [CSS Assignment #1 (Flexbox)](1-html-css/flexbox/flexbox-assignment/css-assignment-1.md)                    |
 | 5    | 🎨 CSS           | [CSS Assignment #2 (Grid)](1-html-css/grid/grid-assignment/css-assignment-2.md)                             |
