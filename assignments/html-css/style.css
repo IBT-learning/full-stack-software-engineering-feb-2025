@@ -1,0 +1,375 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #f9f7f3;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color:#5c5c5c;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::placeholder {
+    color: #5c5c5c;
+}
+
+form {
+    background-color: white;
+    padding: 1rem 1.5rem;
+   
+}
+form i {
+    font-size: 1rem;
+    color: #5c5c5c;
+}
+input:focus {
+   outline: none;
+}
+
+h1, h2 {
+    color: #1b2629;
+    font-weight: bold;
+    font-family: "Lora", serif;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+/*-----------------------------------------------*/
+.container {
+    padding: 30px 50px;
+}
+/*-------NAVBAR---------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 5rem;
+ }
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold; 
+    color: #1b2629;  
+    font-family: "Lora", serif; 
+}
+nav .navbar_list {
+    margin-top: 0.2rem;
+    display: flex;
+    gap: 40px;
+}
+nav .navbar_list li :hover{
+    text-decoration: underline #9c702a;
+    color: #9c702a;
+}
+form.nav_searchbar {
+    border-radius: 10px;
+}
+
+form.nav_searchbar input, 
+form.hero_searchbar input {
+    border: none;
+    font: inherit;
+    margin-left: 10px;
+    background-color: none;
+}
+
+/* HERO SECTION */
+.hero-section {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.hero-section h1 {
+    font-size: 4rem;
+    margin: 0 350px;
+    text-align: center;
+}
+form.hero_searchbar  {
+    margin-top: 20px;
+    border-radius: 40px;
+    width: 50%;   
+}
+.menu_buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.menu_buttons button, .gallery button{
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.2rem;
+}
+button.one {
+    background-color: #f0f5c4;
+}
+button.one a {
+    color:#59871f;
+}
+button.two {
+    background-color: #efedfa;
+}
+button.two a {
+    color: #3c3a8f;
+}
+button.three {
+    background-color: #e5f7f3;
+}
+button.three a {
+    color: #1f8787;
+}
+button.four {
+    background-color: #e8f5fa;
+}
+button.four a {
+    color: #397a9e;
+}
+button.five {
+    background-color: #feefc9;
+}
+button.five a {
+    color: #d16400;
+}
+button.six {
+    background-color: #ffeae3;
+}
+button.six a{
+    color: #f0493e;
+}
+
+/* MAIN SECTION */
+main {
+    display: flex;
+    align-items: end;
+    gap: 120px;
+}
+main .image {
+    position: relative;
+    width: 170%;
+    height: 450px;
+    border-radius: 30px;
+}
+main .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover; 
+}
+main .image button {
+    font-family: "Lora", serif;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 1px orange;
+    letter-spacing: 0.2rem;
+}
+
+main .image button:hover {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+main .text{
+    margin-right: 20px;
+}
+
+main .text p {
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+main .text button, #latest_recipes > button {
+    padding: 15px 30px;
+    background-color: #f9f7f3;
+    border-radius: 10px;
+    border: solid 1px orange;
+    font: inherit;
+}
+
+main .text button:hover, 
+#latest_recipes > button:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+main .text button a:hover {
+    color: white;
+}
+
+/* LATEST RECIPE SECTION */
+#latest_recipes{
+    margin-top: 120px;
+}
+
+#latest_recipes .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.gallery .items {
+    background-color: white;
+    border-radius: 30px;
+    padding-bottom: 30px;
+}
+.gallery .items > img {
+    height: 250px;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.gallery .items .item_content {
+    padding: 30px 0 0 30px;
+}
+.gallery .item_content > p {
+    font-size: 1.6rem;
+    margin-right: 120px;
+    font-weight: bold;
+    color: #1b2629;
+}
+.gallery .item_content > div {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between
+}
+.gallery .items .item_content .duration {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.gallery .items .item_content .duration i {
+    margin-top: 2px;
+    color: #5c5c5c56;
+}
+
+#latest_recipes > button {
+    margin: auto;
+    display: block;
+}
+
+/* -- -------FOOTER--------- */
+footer{
+    background-color: orange;
+    padding: 15px 50px 10px 50px;
+    color: white;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .logo {
+    color: white; 
+    font-size: 1.2rem;
+}
+footer #social-icons{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 1100px ) {
+    .container {
+        padding: 30px ;
+    }
+    h2 {
+        font-size: 3rem; 
+        text-align: center;
+    }
+    nav {
+        display: block;
+    }
+    nav .nav-items {
+       justify-content: space-between;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+    nav .navbar_list {
+        gap: 15px;
+    }
+    form.nav_searchbar {
+        display: none;
+    }
+    .hero-section h1 {
+        margin: 0;
+    }
+    form.hero_searchbar {
+        width: 85%;
+    }
+
+    .menu_buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    main {
+        display: block;
+    }
+    main .image {
+        width: 100%;
+    }
+    main .image img {
+        object-position: right center;
+    }
+    main .text{
+        margin-top: 2rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #latest_recipes{
+        margin-top: 100px;
+    }
+    #latest_recipes .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .gallery .item_content > p {
+        margin: 0;
+      
+    }
+
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    footer #social-icons{
+        display: flex;
+        gap: 8px;
+    }
+}
