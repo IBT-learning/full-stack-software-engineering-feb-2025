@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Billing</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9ff;
+      padding: 2rem;
+      color: #1a1a2e;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    .section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .section p {
+      font-size: 0.875rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+    }
+
+    th {
+      text-align: left;
+      color: #888;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding-bottom: 0.5rem;
+    }
+
+    td {
+      padding: 0.8rem 0;
+      font-size: 0.95rem;
+      vertical-align: middle;
+    }
+
+    .highlight {
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+
+    .download-btn {
+      padding: 0.5rem 1rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background: #f0f0f0;
+    }
+
+    .load-more {
+      color: #f44336;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    .payment-method {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      max-width: 500px;
+      margin-top: 1rem;
+    }
+
+    .payment-method img {
+      width: 50px;
+      margin-right: 1rem;
+    }
+
+    .payment-info {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .remove-btn {
+      padding: 0.4rem 1rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .remove-btn:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Billing</h1>
+
+  <div class="section">
+    <h2>Order History</h2>
+    <p>Manage billing information and view receipts</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Receipt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Oct. 21, 2021</td>
+          <td>Pro Annual</td>
+          <td><button class="download-btn">Download</button></td>
+        </tr>
+        <tr class="highlight">
+          <td>Aug. 21, 2021</td>
+          <td>Pro Portfolio</td>
+          <td><button class="download-btn">Download</button></td>
+        </tr>
+        <tr>
+          <td>July. 21, 2021</td>
+          <td>Sponsored Post</td>
+          <td><button class="download-btn">Download</button></td>
+        </tr>
+        <tr>
+          <td>Jun. 21, 2021</td>
+          <td>Sponsored Post</td>
+          <td><button class="download-btn">Download</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#" class="load-more">Load more</a>
+  </div>
+
+  <div class="section">
+    <h2>Payment Method</h2>
+    <p>Manage billing information and view receipts</p>
+
+    <div class="payment-method">
+      <div class="payment-info">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+        <span>Visa ending in 2255</span>
+      </div>
+      <button class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+</body>
+</html>
