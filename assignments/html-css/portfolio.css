@@ -6,10 +6,11 @@
 /* body {
 
 } */
+ 
 .hero {
     /* height: 100vh;
     width: 100vh; */
-    background-image: url(/grain\ bg.png);
+    background-image: url(/assignments/html-css/Assets/grain\ bg.png);
     background-size: contain;
     box-sizing: border-box;
 }
@@ -392,18 +393,61 @@ h2 {
     background-color: #f4f4f4;
     
 }
- input, select {
-    max-width: 492px;
-    height: 54px;
-    border-color: none;
- }
- .Contact-form { 
-    display: flex;
-    justify-content: space-between;
-    
-   
- }
- 
+.contact-section {
+      max-width: 900px;
+      width: 100%;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-section h4 {
+      color: #555;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: stretch;
+      margin-block: 50px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .textarea {
+      grid-row: span 2;
+    }
+
+    .contact-form button {
+      grid-column: span 2;
+      padding: 1rem;
+      background: #000;
+      color: #fff;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
 
  /* Section 7: Footer Section */
  footer {
@@ -438,6 +482,7 @@ h2 {
     max-width: 280px;
     margin-inline: auto;
     margin-bottom: 40px;
+    color: #fff;
 
  }
  .ext-links {
@@ -467,6 +512,7 @@ h2 {
 footer ul  {
     display: flex;
     justify-content: center;
+    
 }
  
 .wite-logo {
@@ -477,3 +523,4 @@ footer ul  {
     margin-bottom: 24px;
 
 }
+
