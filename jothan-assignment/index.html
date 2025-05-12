@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEO pro</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <img src="asset/HOODIE (1).png" alt="logo" class="logo" />
+
+        <!-- Hamburger icon -->
+        <div class="icons">&#9776;</div>
+
+        <!-- Nav and Contact grouped for toggling -->
+        <div class="nav-container">
+            <nav>
+                <ul class="navlink">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#"><button>Contact</button></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="home">
+        <div class="text">
+            <h1>Unlock your phone's full</h1>
+            <h2>potential again</h2>
+            <button class="tex">Learn more</button>
+        </div>
+    </div>
+
+    <!-- product -->
+    <div id="product">
+        <section id="product" class="product-section">
+            <h2>Our Products</h2>
+            <div class="product-cards">
+                <div class="card">
+                    <img src="asset/powerbank.jpg" alt="Powerbank">
+                    <h3>Powerbank s50</h3>
+                    <p>Stay charged on the go with our high-capacity powerbanks.</p>
+                </div>
+                <div class="card">
+                    <img src="asset/smartwac.webp" alt="Smartwatch">
+                    <h3>Smartwatch pro16</h3>
+                    <p>Track your fitness and notifications in style.</p>
+                </div>
+                <div class="card">
+                    <img src="asset/earpod.webp" alt="Earpod">
+                    <h3>Wireless Earpod1</h3>
+                    <p>Enjoy crystal clear audio with noise cancellation.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- team -->
+
+    <div id="team">
+        <div class="team-header">
+            <h2>Meet Our Team</h2>
+            <p>Our talented and passionate team members who make it all happen.</p>
+        </div>
+
+
+        <section class="team-section">
+            <div class="team-card">
+                <img src="asset/man.jpeg" alt="Team Member 1" class="team-image">
+                <h3 class="team-name">John Doe</h3>
+                <p class="team-role">Founder</p>
+                <p class="team-bio">John is passionate about leading the team and creating innovative solutions.</p>
+            </div>
+        
+            <div class="team-card">
+                <img src="asset/woman.jpeg" alt="Team Member 2" class="team-image">
+                <h3 class="team-name">Jane Smith</h3>
+                <p class="team-role">Lead Developer</p>
+                <p class="team-bio">Jane is a skilled developer who brings creative ideas to life with code.</p>
+            </div>
+        
+            <div class="team-card">
+                <img src="asset/tean.jpeg" alt="Team Member 3" class="team-image">
+                <h3 class="team-name">Alice Brown</h3>
+                <p class="team-role">Designer</p>
+                <p class="team-bio">Alice designs user-friendly and visually appealing interfaces for our products.</p>
+            </div>
+        </section>
+<footer class="footer">
+    <div class="social-links">
+        <a href="https://www.fakefacebook.com" target="_blank" class="social-link">
+            <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.faketwitter.com" target="_blank" class="social-link">
+            <img src="twitter-icon.png" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://www.fakeinstagram.com" target="_blank" class="social-link">
+            <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.fakelinkedin.com" target="_blank" class="social-link">
+            <img src="linkedin-icon.png" alt="LinkedIn" class="social-icon">
+        </a>
+    </div>
+    <p class="footer-text">&copy; 2025 GEO PRO. All Rights Reserved.</p>
+</footer>
+
+    </div>
+
+    <!-- JavaScript to toggle menu -->
+    <script>
+    const menu = document.querySelector('.icons');
+    const navLinks = document.querySelector('.navlink');
+
+    menu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+
+</html>
