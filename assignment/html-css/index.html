@@ -9,24 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
+    <script src="main.js" defer></script>
 <body>
     <div class="container">
         <!-- -------NAVBAR--------- -->
         <nav>
             <div class="nav-items">
-                <p class="logo"> EasyEats </p>
-                <ul class="navbar_list">
+                <p class="logo"> EasyEats</p>
+                <ul class="desktop-navbar">
                     <li><a href="">Home</a></li>
                     <li> <a href="#features">Features</a></li>
                     <li><a href="#social-icons">Socials</a></li>
                 </ul>
+
+                <div class="hamburger-icon">&#9776;</div> 
             </div>
                 
             <form action="" class="nav_searchbar">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="search" placeholder="Search recipes">
             </form>
+        </nav>
+            
+        <nav class="mobile-navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li> <a href="#features">Features</a></li>
+                <li><a href="#social-icons">Socials</a></li>
+            </ul>
         </nav>
 
         <!-- -------HERO SECTION--------- -->
@@ -109,7 +119,7 @@
                 <div class="items" id="breakfast">
                     <img src="./images/breakfast.jpg" alt="toast bread with berries">
                     <div class="item_content">
-                        <p class="text">Sugar-Coated Toast Bread With Berries</p>
+                        <p class="text">Coated Toast Bread With Berries</p>
                         <div>
                             <button class="two"><a href="">BREAKFAST</a></button>
                             <div class="duration">

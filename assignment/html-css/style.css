@@ -17,40 +17,33 @@ body {
     color:#5c5c5c;
 }
 
+/* GENERAL */
 ul {
     list-style: none;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 ::placeholder {
     color: #5c5c5c;
 }
-
 form {
     background-color: white;
-    padding: 1rem 1.5rem;
-   
+    padding: 1rem 0 1rem 1.5rem;  
 }
 form i {
     font-size: 1rem;
-    color: #5c5c5c;
+    color: orange;
 }
 input:focus {
    outline: none;
 }
-
 h1, h2 {
     color: #1b2629;
     font-weight: bold;
     font-family: "Lora", serif;
-}
-
-h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 /*-----------------------------------------------*/
@@ -73,17 +66,25 @@ nav .nav-items {
 .logo {
     font-size: 1.3rem;
     font-weight: bold; 
-    color: #1b2629;  
+    color: orange;  
     font-family: "Lora", serif; 
 }
-nav .navbar_list {
+nav .desktop-navbar {
     margin-top: 0.2rem;
     display: flex;
     gap: 40px;
 }
-nav .navbar_list li :hover{
-    text-decoration: underline #9c702a;
-    color: #9c702a;
+nav .desktop-navbar li :hover{
+    text-decoration: underline orange;
+    color: orange;
+}
+
+nav .hamburger-icon {
+    display: none;
+    position: relative;
+}
+.mobile-navbar {
+    display: none;
 }
 form.nav_searchbar {
     border-radius: 10px;
@@ -106,8 +107,7 @@ form.hero_searchbar input {
     gap: 40px;
 }
 .hero-section h1 {
-    font-size: 4rem;
-    margin: 0 350px;
+    width: 50%;
     text-align: center;
 }
 form.hero_searchbar  {
@@ -193,22 +193,18 @@ main .image button {
     border: solid 1px orange;
     letter-spacing: 0.2rem;
 }
-
 main .image button:hover {
     background-color: orange;
     color: white;
     font-weight: bold;
 }
-
 main .text{
     margin-right: 20px;
 }
-
 main .text p {
     margin: 30px 0;
     line-height: 1.8;
 }
-
 main .text button, #latest_recipes > button {
     padding: 15px 30px;
     background-color: #f9f7f3;
@@ -216,14 +212,12 @@ main .text button, #latest_recipes > button {
     border: solid 1px orange;
     font: inherit;
 }
-
 main .text button:hover, 
 #latest_recipes > button:hover {
     background-color: orange;
     color: white;
     cursor: pointer;
 }
-
 main .text button a:hover {
     color: white;
 }
@@ -252,11 +246,11 @@ main .text button a:hover {
     object-fit: cover;
 }
 .gallery .items .item_content {
-    padding: 30px 0 0 30px;
+    margin: 30px 0 0 30px;
 }
 .gallery .item_content > p {
     font-size: 1.6rem;
-    margin-right: 120px;
+    width: 70%;;
     font-weight: bold;
     color: #1b2629;
 }
@@ -275,7 +269,6 @@ main .text button a:hover {
     margin-top: 2px;
     color: #5c5c5c56;
 }
-
 #latest_recipes > button {
     margin: auto;
     display: block;
@@ -300,11 +293,13 @@ footer #social-icons{
 }
 
 @media (max-width: 1100px ) {
+    .show {
+        display: block;
+    }
     .container {
         padding: 30px ;
     }
     h2 {
-        font-size: 3rem; 
         text-align: center;
     }
     nav {
@@ -313,22 +308,37 @@ footer #social-icons{
     nav .nav-items {
        justify-content: space-between;
     }
-    .logo {
-        font-size: 1.1rem;
-    }
-    nav .navbar_list {
+    nav .desktop-navbar {
         gap: 15px;
+        display: none;
+    }
+    nav .hamburger-icon {
+        display: block;
+        color: orange;
+        font-size: 1.3rem;
+    }
+    nav .hamburger-icon:hover {
+        cursor: pointer;
+    }
+    nav.mobile-navbar ul {
+        background-color: orange;
+        color: white;
+        padding: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 8px;
     }
     form.nav_searchbar {
         display: none;
     }
+    
     .hero-section h1 {
-        margin: 0;
+        width: 100%;
     }
     form.hero_searchbar {
-        width: 85%;
+        width: 90%;
     }
-
     .menu_buttons {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -353,21 +363,33 @@ footer #social-icons{
         margin-top: 100px;
     }
     #latest_recipes .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
+        grid-template-columns: 1fr;   
     }
-
+   
+    .gallery .items .item_content {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .gallery .item_content > p {
-        margin: 0;
-      
+        width: 100%;
+    }
+    .gallery .item_content > div {
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery .item_content > div button{
+        width: 80%;
+    }
+    .gallery .items .item_content .duration {
+        margin-top: 20px;
     }
 
     footer {
         padding-left: 30px;
         padding-right: 30px;
     }
-
     footer #social-icons{
         display: flex;
         gap: 8px;
