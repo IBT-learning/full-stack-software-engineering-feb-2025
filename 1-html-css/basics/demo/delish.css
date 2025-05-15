@@ -45,8 +45,8 @@
  }
 
  .mobile-nav {
-     /* display: none; */
-     display: flex;
+     display: none;
+     /* display: flex; */
      flex-direction: column;
      position: absolute;
      background-color: #333;
@@ -54,11 +54,11 @@
      left: 0;
      width: 100%;
      padding: 1rem 2rem;
-     z-index: -1;
+     z-index: 10;
  }
 
  .mobile-nav.open {
-     display: flex;
+     display: none;
  }
 
  .hero {
@@ -100,7 +100,16 @@
 
  .section {
     padding: 4rem 2rem;
-    text-align: center;
+    /* margin-left: auto; */
+    /* text-align: center; */
+ }
+
+
+ .section h2 {
+   margin-left: auto;
+   margin-right: auto;
+   /* background-color: red; */
+   width: fit-content;
  }
 
  .menu-cards {
@@ -202,10 +211,46 @@
     padding: 2rem 0;
  }
 
+ #featured {
+   text-align: center;
+ }
+
  footer .socials a {
     color: #f4c542;
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
+ }
+
+ /* @media screen and (min-width: 768px)  and (max-width: 992px){
+   .hero-content h1 {
+      font-size: 14px;
+      color: red;
+      margin-left: auto;
+      text-align: end;
+   }
+
+ } */
+
+ @media only screen and (max-width: 768px) {
+   .desktop-nav {
+      display: none;
+   }
+   .hamburger {
+      display: block;
+   }
+   .mobile-nav.open {
+      display: flex;
+   }
+ }
+
+ @media (max-width: 550px) {
+   .hero-content h1 {
+      font-size: 1.5rem;
+   }
+   .hero-content {
+      margin-left: 10px;
+      margin-right: 10px;
+   }
  }
 
