@@ -1,0 +1,267 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: deepskyblue;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.5rem;
+
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+.nav{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+.nav a{
+    color: rgba(255, 255, 255, 0.664);
+    text-decoration: none;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.nav a:hover{
+text-decoration: underline;
+font-size: 1.25rem;
+font-weight: bold;
+transition: ease-in-out 0.3s;
+}
+
+.hero{
+    background: url(./asset/vessel-dry-docking.webp) no-repeat center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.7; */
+    margin-bottom: 0.2rem;
+}
+.hero-content{
+    text-align: center;
+    color: black;
+    padding: 3.5rem;
+}
+.hero-content h1{
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    
+}
+.hero-content p{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.service{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: white;
+    padding: 0.5rem;
+
+}
+.service h1{
+    
+    background-color: azure;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 2rem;
+    font-size: 2rem;
+
+
+}
+
+.card{
+    background-color: azure;
+    text-align: center;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit:fill;
+    border-radius: 10px 10px 0 0;
+}
+
+.about{
+    border: 2px solid black;
+    background: url(./asset/about2.jpg) no-repeat center/cover ;
+    height: 40vh;
+}
+.about h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.about p{
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.clients{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: white;
+    padding: 0.5rem;
+     gap: 10px;
+    background-color: white;
+    padding: 0.5rem;
+}
+.clients h1{
+    background-color: azure;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 2rem;
+    font-size: 2rem;
+}
+.clients img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+}
+.clients div{
+    background-color: azure;
+    text-align: center;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);   
+}
+.management{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: rgb(77, 150, 140);
+    padding: 0.5rem;
+}
+
+.management h1{
+    grid-column: 1/4;
+    text-align: center;
+    grid-row: 1/2;
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: rgba(42, 35, 139, 0.76);
+}
+.management div{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+    border-radius: 10px;
+    
+}
+.staff{
+    text-align: center;
+    background-color: rgb(59, 113, 129);
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.management div p{
+    padding: 0.5rem;
+}
+.certification{
+    display: grid;
+    grid-template-columns: auto  auto;
+    gap: 10px;
+    background-color:  rgba(84, 159, 184, 0.315);
+
+}
+.certification h1{
+    grid-column: 1/3;
+    background-color: rgba(84, 159, 184, 0.315);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 1rem;
+}
+.certification div img{
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+}
+.certification div{
+    background-color: azure;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+    margin: 0.5rem;
+}
+.contact{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}
+.contact h1{
+    grid-column: 1/3;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 1rem;
+    background-color: deepskyblue;
+}
+.phone{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0.5rem;
+    gap: 10px;
+    background-color: rgba(65, 146, 173, 0.575);
+}
+.phone h3{
+    
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.touch{
+    background-color: cadetblue;
+    grid-column: 2/3;
+    color: white;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.touch h2{
+    text-align: center;
+    padding: 0.4rem;
+}
+.touch input{
+    width: 50%;
+    height: 4vh;
+}
+.touch textarea{
+    width: 60%;
+}
+footer{
+    background-color: deepskyblue;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+}
