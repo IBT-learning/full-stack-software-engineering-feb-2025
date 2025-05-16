@@ -39,15 +39,15 @@ header {
     cursor: pointer;
 }
 .mobile-nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #333;
-    top: 86px;
-    left: 0;
-    width: 100%;
-    padding: 1rem 2rem;
-    z-index: 10;
+     display: none;
+     flex-direction: column;
+     position: absolute;
+     background-color: #333;
+     top: 70px;
+     left: 0;
+     width: 100%;
+     padding: 1rem 2rem;
+     z-index: 10;
 }
 .mobile-nav.open {
     display: flex;
