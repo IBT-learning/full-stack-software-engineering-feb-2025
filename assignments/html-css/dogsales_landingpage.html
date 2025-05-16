@@ -17,7 +17,7 @@
         <a href="#Contact">Contact</a>
         </nav>
         <!-- mobile nav -->
-        <div class="Dogs" id="dogs">
+        <div class="hamburger" id="hamburger">
             &#9776;
         </div>
         <nav class="mobile-nav" id="mobileNav">
@@ -225,5 +225,10 @@
         <a href="#">LinkedIn</a>
         </div>
        </footer>
+       <script>
+        const hamburger = document.getElementById('dogs');
+        const mobileNav = document.getElementById('mobileNav');
+        hamburger.addEventListener('click', () => {mobileNav.classList.toggle('open')});
+    </script>
    </body>
 </html>
