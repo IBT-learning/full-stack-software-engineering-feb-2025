@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 767px)"
+      href="mobile.css"
+    />
     <script src="main.js" defer></script>
     <title>JinStore</title>
   </head>
@@ -29,8 +34,8 @@
             <div class="max-width flex space-between">
               <div class="advert-list-container-top-left flex">
                 <ul class="top-list flex">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">My Account</a></li>
+                  <li><a href="contact-us.html">About Us</a></li>
+                  <li><a href="vendor-admin-dashboard.html">My Account</a></li>
                   <li><a href="#">Wishlist</a></li>
                 </ul>
                 <div class="flex pipe">|</div>
@@ -54,7 +59,7 @@
                   <option value="mandarine">NAIRA</option>
                 </select>
 
-                <a href="#">Order Tracking</a>
+                <a href="#" class="tracking-order">Order Tracking</a>
               </div>
             </div>
           </div>
@@ -63,14 +68,18 @@
           <section class="grid gridcontainer max-width">
             <div class="nav-container flex">
               <div class="logo-container flex">
-                <h1 class="logo flex"><img src="img/logo.svg" alt="logo" /></h1>
+                <h1 class="logo flex">
+                  <a href="empty-cart.html"
+                    ><img src="img/logo.svg" alt="logo"
+                  /></a>
+                </h1>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-6"
+                  class="size-6 location"
                 >
                   <path
                     stroke-linecap="round"
@@ -208,7 +217,7 @@
               <input type="text" name="password" id="password" />
             </section>
             <section class="flex remember-password">
-              <div class="flex">
+              <div class="flex password-reset">
                 <input type="checkbox" name="check" id="check" />
 
                 <label for="check">Remember me</label>

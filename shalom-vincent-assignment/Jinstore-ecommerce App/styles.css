@@ -1397,8 +1397,14 @@ header {
   border-radius: 0.6rem;
 }
 
+.remember-password {
+  align-items: center;
+  justify-content: space-between;
+}
+
 .remember-password div {
   align-items: center;
+  gap: 1rem;
 }
 
 .login-form-btn,
