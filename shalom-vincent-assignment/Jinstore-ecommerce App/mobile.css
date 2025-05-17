@@ -1,0 +1,166 @@
+@media (max-width: 767px) {
+  .max-width {
+    max-width: 96%;
+  }
+
+  .hamburger-menu-container {
+    display: block;
+  }
+
+  .main-hero {
+    height: inherit;
+    flex-direction: column;
+  }
+
+  .grid-el {
+    grid-template-columns: 1fr;
+  }
+
+  .best-seller .grid,
+  .grid-col-3,
+  .feature-product-banner,
+  .new-arrivals-items,
+  .product-advert-banner,
+  .operations-section {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* 20 or 35 */
+    gap: 1rem;
+  }
+
+  .center-footer-container,
+  .top-footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 1rem;
+  }
+
+  .best-seller {
+    margin-bottom: 3rem;
+  }
+
+  .contact-page-address {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    flex: 1;
+    height: 100%;
+  }
+
+  .col-2 {
+    grid-column: 1;
+  }
+
+  .new-arrivals-left-nav h2 {
+    font-size: 2rem;
+    color: var(--text-secondary);
+  }
+  .new-arrivals-left-nav p {
+    font-size: 1.2rem;
+    color: var(--bottom-advertText);
+    display: none;
+  }
+
+  .top-advert {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .top-advert p {
+    width: 100%;
+    flex: 1;
+  }
+
+  .bottom-advert div {
+    align-items: flex-start;
+  }
+
+  .hero-nav,
+  .aside-hero,
+  .header-form,
+  .location,
+  .delivery,
+  .pipe,
+  .tracking-order,
+  .space,
+  .sortbyForm,
+  .showItems,
+  .aside-vendor-dashboard {
+    display: none;
+  }
+
+  .advert-list-container-top-left {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hamburger-menu-container .hamburger-menu {
+    display: none;
+  }
+
+  .hero-description {
+    width: 100%;
+  }
+
+  .hero-banner {
+    position: relative;
+  }
+
+  .users {
+    gap: 2rem;
+  }
+
+  .price-filter {
+    display: none;
+  }
+
+  .aside-container,
+  .main-vendor-dashboard {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .shop-hero-description {
+    width: 100%;
+  }
+
+  .shop-hero {
+    min-height: 39vh;
+  }
+
+  .numOfProductsDisplayed {
+    justify-content: space-between;
+  }
+
+  .filter-container {
+    justify-content: flex-end;
+  }
+
+  .search-results {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .contact-page-description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .contact-page-description h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    line-height: 1;
+  }
+
+  .contact-page-description p {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .vendor-terms {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0;
+  }
+
+  .vendor-dashboard-form {
+    grid-column: 1/-1;
+  }
+}
