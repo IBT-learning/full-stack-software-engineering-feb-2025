@@ -33,7 +33,7 @@
 
  .desktop-nav a,
  .mobile-nav a {
-     color: #gray;
+     color: #336;
      text-decoration: none;
      margin-left: 1.5rem;
      font-weight: 600;
@@ -85,7 +85,7 @@
  }
 
  .hero-content {
-     background: #D3D3D3;
+     background-color: #fff;
      padding: 1rem 2rem;
      border-radius: 15px;
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
@@ -223,7 +223,7 @@
  }
 
  footer .socials a {
-    color: #gray;
+    color: #336;
     margin: 0 1rem;
     font-size: 1.5rem;  
  }
