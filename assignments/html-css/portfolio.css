@@ -3,16 +3,12 @@
     margin: 0;
     font-family: "Montserrat", sans-serif;
 }
-/* body {
-
-} */
  
 .hero {
-    /* height: 100vh;
-    width: 100vh; */
     background-image: url(/assignments/html-css/Assets/grain\ bg.png);
     background-size: contain;
     box-sizing: border-box;
+    
 }
 .eyebrow {
     text-transform: uppercase;
@@ -41,13 +37,25 @@ ul {
     gap: 32px;
 
 }
+
+.hero-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
 h1 {
     font-size: 56px;
     margin-bottom: 20px;
+    max-width: 900px;
+    text-align: center;
+    
 }
 p {
     font-size: 20px;
     margin-bottom: 20px;
+    max-width: 670px;
 }
 .pri-btn, .sec-btn {
     margin-bottom: 40px;
@@ -263,7 +271,6 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 55px 40px;
     margin-top: 2rem;
-    /* padding: 24px; */
  }
 
  .pro-card {
@@ -368,7 +375,6 @@ h2 {
  }
  .Experience span {
     font-size: 14px;
-    /* text-transform: uppercase; */
     color: #8491A0;
  }
  .Role {
@@ -410,7 +416,7 @@ h2 {
     }
 
     .contact-section h2 {
-      font-size: 1.5rem;
+      font-size: 24px;
       margin-bottom: 2rem;
     }
 
@@ -426,7 +432,7 @@ h2 {
     .contact-form select,
     .contact-form textarea {
       padding: 0.75rem;
-      font-size: 1rem;
+      font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 5px;
       width: 100%;
