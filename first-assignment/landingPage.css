@@ -118,6 +118,10 @@ font-weight: normal;
   justify-content: center;
   text-align: center;
   background: url('assets/sweetHoursOceanView.jpg') no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 🔒 Makes background static */
+  background-repeat: no-repeat;
   color: white;
   height: 100vh;
   padding: 20px;
