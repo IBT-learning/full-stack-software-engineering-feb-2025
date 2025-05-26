@@ -24,13 +24,15 @@
         </nav>
       </div>
       
- <div class="hamburger" id="hamburger">&#9776;</div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
        <nav class="mobile-nav" id="mobileNav">
         <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
         <a href="#locations">Locations</a>
         <a href="#news">News & Contact</a>
       </nav>
+      
     </header>
 
 <!-- hero section -->
@@ -398,9 +400,9 @@
     <section class="locations-descriptions" id="locations">
       <h2>Discover Unmatched Comfort Across Iconic Cities</h2>
       <div class="description-info">
-<p>Our hotels are located in Lagos, Abuja, Port Harcourt, and other iconic cities—offering tailored luxury and comfort wherever you go.</p>
-</div>
-</section>
+      <p>Our hotels are located in Lagos, Abuja, Port Harcourt, and other iconic cities—offering tailored luxury and comfort wherever you go.</p>
+      </div>
+      </section>
 
 <section>
 <h2>Our Locations Worldwide</h2>
@@ -414,10 +416,9 @@
   <div class="location">Dubai</div>
   <div class="location">Europe</div>
   <div class="location">New York City</div>
-
   </div>
   <select class="location-select">
-  <option value="">Choose a Location</option>
+  <option value="choose">Choose a Location</option>
   <option value="ikeja">Lagos - Lekki</option>
   <option value="ikeja">Lagos - Ikeja</option>
   <option value="ikeja">Abuja </option>
@@ -428,7 +429,7 @@
   <option value="ikeja">Europe </option>
   <option value="ikeja">New York City</option>
   </select>
-  </select>
+</section>
 
 
 <!-- news section -->
@@ -441,6 +442,7 @@
       <button type="submit">Subscribe</button>
     </form>
   </div>
+  
 <!-- contact section -->
   <div class="ceo-section">
     <img src="assets/ceo.jpg" alt="CEO Photo" class="ceo-photo" />
@@ -499,13 +501,13 @@
 <footer class="footer" id="footer">
   <p>&copy; 2025 Sweethours Hotels & Suites. All right reserved</p>
   <div class="social-icons">
-    <a href="https://web.whatsapp.com/" target="_blank" class="icon whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <a href="http://facebook.com/stories/122099436320251175/UzpfSVNDOjY2NjUxOTY4MjQxOTQ2OQ==/" target="_blank" class="icon facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://x.com/home" target="_blank" class="icon twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc" target="_blank"  class="icon youtube" title="YouTube"><i class="fab fa-youtube"></i></a>
-    <a href="http://linkedin.com/notifications/?filter=all" target="_blank" class="icon linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://www.tiktok.com/en/" target="_blank" class="icon tiktok" title="TikTok"><i class="fab fa-tiktok"></i></a>
-    <a href="https://www.telegram.com/" target="_blank" class="icon telegram"  title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://web.whatsapp.com/" aria-label="whatsapp" target="_blank" class="icon whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="http://facebook.com/stories/122099436320251175/UzpfSVNDOjY2NjUxOTY4MjQxOTQ2OQ==/" aria-label="facebook" target="_blank" class="icon facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/home" aria-label="twitter" target="_blank" class="icon twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc" aria-label="youtube" target="_blank"  class="icon youtube" title="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="http://linkedin.com/notifications/?filter=all" aria-label="linkedin" target="_blank" class="icon linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.tiktok.com/en/" aria-label="tiktok" target="_blank" class="icon tiktok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.telegram.com/" aria-label="telegram" target="_blank" class="icon telegram"  title="Telegram"><i class="fab fa-telegram-plane"></i></a>
   </div>
 </footer>
 
@@ -521,16 +523,30 @@
   });
 </script>
 
-<!-- hamburger script -->
 <script>
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobileNav');
 
+  // Toggle mobile nav on hamburger click
   hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
     mobileNav.classList.toggle('active');
   });
-</script>
 
+  // Close menu if clicking outside the nav or hamburger
+  document.addEventListener('click', function (event) {
+    const isClickInside = mobileNav.contains(event.target) || hamburger.contains(event.target);
+    if (!isClickInside) {
+      mobileNav.classList.remove('active');
+    }
+  });
+
+  // Close menu when clicking any link inside mobile nav
+  const navLinks = mobileNav.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.remove('active');
+    });
+  });
+</script>
 </body>
 </html>
