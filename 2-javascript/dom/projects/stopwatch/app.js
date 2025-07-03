@@ -16,7 +16,7 @@ function updateDisplay() {
 }
 // setInterval
 // setTimeout
-let timerReturn = setInterval(() => {console.log("This will run after 3 seconds")}, 3000)
+// let timerReturn = setInterval(() => {console.log("This will run after 3 seconds")}, 3000)
 
 function startTimer() {
   if (running === false) {
