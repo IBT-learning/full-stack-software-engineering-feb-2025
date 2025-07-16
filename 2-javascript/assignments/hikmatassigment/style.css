@@ -1,0 +1,138 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background-color: transparent;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.joke-section {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.joke-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #ffeb3b;
+  animation: pulse 2s infinite;
+}
+
+.joke-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1.8rem;
+  border-radius: 15px;
+  margin-bottom: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.joke-box.animate {
+  transform: scale(1.02);
+}
+
+.joke-text {
+  font-size: 1.2rem;
+  color: #fefefe;
+  margin-bottom: 1rem;
+}
+
+.punchline {
+  font-weight: 600;
+  color: #03e9f4;
+}
+
+/* Button */
+button {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #03e9f4, #0a6eff);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Footer */
+footer {
+  background: transparent;
+  text-align: center;
+  padding: 1rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .joke-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .joke-text {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
