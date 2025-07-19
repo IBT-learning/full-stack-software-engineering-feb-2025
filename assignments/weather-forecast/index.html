@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header section -->
+      <header>
+        <div class="header">
+          <div class="first">
+            <img
+              src="./assets/dashboard-icon.png"
+              class="header-icon"
+              alt="header-icon"
+            />
+            <img
+              src="./assets/notification.png"
+              class="header-icon"
+              alt="header-icon"
+            />
+            <div class="first-inner">
+              <img
+                src="./assets/location.png"
+                alt="location-icon"
+                class="location-icon"
+              />
+              <p class="location-title">Dhakar - Bangladesh</p>
+            </div>
+          </div>
+          <div class="second">
+            <img
+              src="./assets/search.png"
+              alt="search-icon"
+              class="search-icon"
+            />
+            <input type="text" class="search-input" placeholder="search" />
+          </div>
+          <div class="third">
+            <div class="third-inner">
+              <img src="./assets/moon.png" alt="moon-icon" class="moon-icon" />
+            </div>
+            <img src="./assets/ellipse.png" alt="ellpse" class="person-icon" />
+          </div>
+        </div>
+      </header>
+
+      <!-- main section -->
+      <main>
+        <!-- MAIN FIRST -->
+        <div class="main-first">
+          <!-- sub header -->
+          <div class="sub-header">
+            <div class="sub-header-first">
+              <p class="today">Today</p>
+              <p class="tomorrow">Tomorrow</p>
+              <p class="next">Next 7 Days</p>
+            </div>
+            <div class="sub-header-second">
+              <p class="sub-header-second-forecast">Forecast</p>
+              <p class="sub-header-second-air-quality">Air Quality</p>
+            </div>
+          </div>
+          <!-- weather forecast -->
+          <div class="weather-forecast">
+            <!-- weather condition -->
+            <div class="weather-condition">
+              <div class="weather-condition-header">
+                <p class="friday">Friday</p>
+                <p class="time">11:45AM</p>
+              </div>
+              <div class="weather-content">
+                <!-- first content -->
+                <div class="first-content">
+                  <p class="degree">16<sup class="sup">0</sup></p>
+                  <div class="details">
+                    <p class="first-content-text">
+                      Real Feel:
+                      <span class="span-text"
+                        >18<sup class="mod-sup">0</sup></span
+                      >
+                    </p>
+                    <p class="first-content-text">
+                      Wind N-E: <span class="span-text">6-7 Km/h</span>
+                    </p>
+                    <p class="first-content-text">
+                      Pressure: <span class="span-text">100MB</span>
+                    </p>
+                    <p class="first-content-text">
+                      Humidity: <span class="span-text">51%</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- second content -->
+                <div class="second-content">
+                  <img
+                    src="./assets/sunny.png"
+                    alt="sunny"
+                    class="second-content-icon"
+                  />
+                  <div class="details">
+                    <p class="first-content-text">
+                      Sunrise:
+                      <span class="span-text">5:30AM</span>
+                    </p>
+                    <p class="first-content-text">
+                      Sunset<span class="span-text">6:30PM</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- days condition -->
+            <div class="days-condition">
+              <!-- saturday -->
+              <div class="day-condition">
+                <div class="day-condition-header">
+                  <p class="day-condition-text">SAT</p>
+                </div>
+                <div class="day-condition-icon-div">
+                  <img
+                    src="./assets/rainy-sunny.png"
+                    class="day-condition-icon"
+                    alt="day-condition"
+                  />
+                </div>
+                <div class="day-condition-value">
+                  <p class="day-value">10<sup class="day-power">0</sup></p>
+                </div>
+              </div>
+              <!-- sunday -->
+              <div class="day-condition">
+                <div class="day-condition-header">
+                  <p class="day-condition-text">SUN</p>
+                </div>
+                <div class="day-condition-icon-div">
+                  <img
+                    src="./assets/rainy-windy.png"
+                    class="day-condition-icon"
+                    alt="day-condition"
+                  />
+                </div>
+                <div class="day-condition-value">
+                  <p class="day-value">15<sup class="day-power">0</sup></p>
+                </div>
+              </div>
+              <!-- monday -->
+              <div class="day-condition">
+                <div class="day-condition-header">
+                  <p class="day-condition-text">MON</p>
+                </div>
+                <div class="day-condition-icon-div">
+                  <img
+                    src="./assets/rainy.png"
+                    class="day-condition-icon"
+                    alt="day-condition"
+                  />
+                </div>
+                <div class="day-condition-value">
+                  <p class="day-value">11<sup class="day-power">0</sup></p>
+                </div>
+              </div>
+              <!-- tuesday -->
+              <div class="day-condition">
+                <div class="day-condition-header">
+                  <p class="day-condition-text">TUE</p>
+                </div>
+                <div class="day-condition-icon-div">
+                  <img
+                    src="./assets/rainy-windy.png"
+                    class="day-condition-icon"
+                    alt="day-condition"
+                  />
+                </div>
+                <div class="day-condition-value">
+                  <p class="day-value">10<sup class="day-power">0</sup></p>
+                </div>
+              </div>
+              <!-- wednesday -->
+              <div class="day-condition">
+                <div class="day-condition-header">
+                  <p class="day-condition-text">WED</p>
+                </div>
+                <div class="day-condition-icon-div">
+                  <img
+                    src="./assets/sunny-rainy.png"
+                    class="day-condition-icon"
+                    alt="day-condition"
+                  />
+                </div>
+                <div class="day-condition-value">
+                  <p class="day-value">12<sup class="day-power">0</sup></p>
+                </div>
+              </div>
+              <!-- thursday -->
+              <div class="day-condition">
+                <div class="day-condition-header">
+                  <p class="day-condition-text">THU</p>
+                </div>
+                <div class="day-condition-icon-div">
+                  <img
+                    src="./assets/rainy-sunny.png"
+                    class="day-condition-icon"
+                    alt="day-condition"
+                  />
+                </div>
+                <div class="day-condition-value">
+                  <p class="day-value">10<sup class="day-power">0</sup></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Today's Review -->
+          <p class="today-review">Today's Review</p>
+          <div class="review-container">
+            <div class="first-review">
+              <!-- First review card -->
+              <div class="review-card">
+                <div>
+                  <p class="review-title">Wind Status</p>
+                </div>
+                <img
+                  src="./assets/wind-status-rectangle.png"
+                  alt="Status"
+                  class="review-image"
+                />
+                <div class="description">
+                  <p class="desc1">7.5km/h</p>
+                  <p class="desc2">6:20AM</p>
+                </div>
+              </div>
+              <!-- Second Review card -->
+              <div class="review-card">
+                <div>
+                  <p class="review-title">UV Index</p>
+                </div>
+                <img
+                  src="./assets/uv-circle.png"
+                  alt="Status"
+                  class="review-image"
+                />
+                <div class="description">
+                  <p class="desc1">5.50UV</p>
+                </div>
+              </div>
+              <!-- Third Review Card -->
+              <div class="review-card">
+                <div>
+                  <p class="review-title">Humidity</p>
+                </div>
+                <img
+                  src="./assets/vector.png"
+                  alt="Status"
+                  class="review-image"
+                />
+                <div class="description">
+                  <p class="desc1">84%</p>
+                  <p class="desc2">The dew point is 27 deg now</p>
+                </div>
+              </div>
+              <!-- Fourth review Card -->
+              <div class="review-card">
+                <div>
+                  <p class="review-title">Visibility</p>
+                </div>
+                <img
+                  src="./assets/sunny-cloudy.png"
+                  alt="Status"
+                  class="review-image"
+                />
+                <div class="description">
+                  <p class="desc1">04km</p>
+                  <p class="desc2">Haze is affecting visibility</p>
+                </div>
+              </div>
+            </div>
+            <div class="second-review">
+              <div class="explore">
+                <p class="explore-text">
+                  Explore global map of wind weather and ocean condition.
+                </p>
+              </div>
+              <button class="get-started-button">GET STARTED</button>
+            </div>
+          </div>
+        </div>
+        <!-- MAIN SECOND -->
+        <div class="main-second">
+          <div class="main-second-header-div">
+            <p class="main-second-header-div-text">Chance of rain</p>
+          </div>
+          <div class="rain-graph">
+            <img
+              src="./assets/rain-graph.png"
+              alt="rain-graph"
+              class="rain-graph-image"
+            />
+          </div>
+          <div class="main-second-header-div-other">
+            <p class="main-second-header-div-other-text">Other Cities</p>
+            <p class="main-second-header-div-see-all">See all</p>
+          </div>
+          <!-- cities section -->
+          <div class="cities">
+            <!-- city -->
+            <div class="city">
+              <p class="country">China</p>
+              <div class="city-row">
+                <p class="city-name">Beijing</p>
+                <img
+                  src="./assets/rainy.png"
+                  class="city-icon"
+                  alt="condition"
+                />
+              </div>
+              <p class="condition">Cloudy</p>
+            </div>
+            <!-- city -->
+            <div class="city">
+              <p class="country">US</p>
+              <div class="city-row">
+                <p class="city-name">Carlifonia</p>
+                <img
+                  src="./assets/windy.png"
+                  class="city-icon"
+                  alt="condition"
+                />
+              </div>
+              <p class="condition">Windy</p>
+            </div>
+            <!-- city -->
+            <div class="city">
+              <p class="country">Dubai</p>
+              <div class="city-row">
+                <p class="city-name">Arab Emirates</p>
+                <img
+                  src="./assets/sunny.png"
+                  class="city-icon"
+                  alt="condition"
+                />
+              </div>
+              <p class="condition">Mostly sunny</p>
+            </div>
+            <!-- city -->
+            <div class="city">
+              <p class="country">Canada</p>
+              <div class="city-row">
+                <p class="city-name">Charlottetown</p>
+                <img
+                  src="./assets/sunny-rainy.png"
+                  class="city-icon"
+                  alt="condition"
+                />
+              </div>
+              <p class="condition">Light SnowShower</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer section -->
+      <footer></footer>
+    </div>
+
+    <!-- JAVASCRIPT CODES -->
+    <script>
+      const apiKey = "6efbd54f668440869cd74456251807";
+
+      // Fetch and update weather
+      function fetchWeather(city) {
+        fetch(
+          `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            const current = data.current;
+            const forecast = data.forecast.forecastday;
+
+            // Temperature
+            document.querySelector(
+              ".degree"
+            ).innerHTML = `${current.temp_c}<sup>0</sup>`;
+
+            // Real Feel
+            document.querySelectorAll(
+              ".span-text"
+            )[0].innerHTML = `${current.feelslike_c}<sup class="mod-sup">0</sup>`;
+
+            // Wind
+            document.querySelectorAll(
+              ".first-content-text"
+            )[1].innerHTML = `Wind ${current.wind_dir}: <span class="span-text">${current.wind_kph} Km/h</span>`;
+
+            // Pressure
+            document.querySelectorAll(
+              ".first-content-text"
+            )[2].innerHTML = `Pressure: <span class="span-text">${current.pressure_mb}MB</span>`;
+
+            // Humidity
+            document.querySelectorAll(
+              ".first-content-text"
+            )[3].innerHTML = `Humidity: <span class="span-text">${current.humidity}%</span>`;
+
+            // Weather Icon
+            document.querySelector(
+              ".second-content-icon"
+            ).src = `https:${current.condition.icon}`;
+
+            // Condition text
+            document.querySelector(".condition").textContent =
+              current.condition.text;
+
+            // Location name
+            document.querySelector(
+              ".location-title"
+            ).textContent = `${data.location.name} - ${data.location.country}`;
+
+            // Time
+            const lastUpdated = new Date(current.last_updated);
+            document.querySelector(".time").textContent =
+              lastUpdated.toLocaleTimeString([], {
+                hour: "2-digit",
+                minute: "2-digit",
+              });
+
+            // Day name
+            const dayName = lastUpdated.toLocaleDateString("en-US", {
+              weekday: "long",
+            });
+            document.querySelector(".friday").textContent = dayName;
+
+            // Sunrise / Sunset
+            document.querySelectorAll(
+              ".first-content-text"
+            )[4].innerHTML = `Sunrise: <span class="span-text">${forecast[0].astro.sunrise}</span>`;
+            document.querySelectorAll(
+              ".first-content-text"
+            )[5].innerHTML = `Sunset: <span class="span-text">${forecast[0].astro.sunset}</span>`;
+
+            // 6-day forecast
+            const dayElements = document.querySelectorAll(".day-condition");
+            forecast.slice(1, 7).forEach((day, index) => {
+              const temp = Math.round(day.day.avgtemp_c);
+              const icon = `https:${day.day.condition.icon}`;
+              const date = new Date(day.date);
+              const weekday = date.toLocaleDateString("en-US", {
+                weekday: "short",
+              });
+
+              // Set values
+              dayElements[index].querySelector(
+                ".day-condition-text"
+              ).textContent = weekday.toUpperCase();
+              dayElements[index].querySelector(
+                ".day-value"
+              ).innerHTML = `${temp}<sup class="day-power">0</sup>`;
+              dayElements[index].querySelector(".day-condition-icon").src =
+                icon;
+
+              // === TODAY'S REVIEW CARDS ===
+
+              // 1. Wind Status (first card)
+              const windStatusCard =
+                document.querySelectorAll(".review-card")[0];
+              windStatusCard.querySelector(
+                ".desc1"
+              ).textContent = `${current.wind_kph} km/h`;
+              windStatusCard.querySelector(
+                ".desc2"
+              ).textContent = `${current.wind_dir}`;
+
+              // 2. UV Index (second card)
+              const uvCard = document.querySelectorAll(".review-card")[1];
+              uvCard.querySelector(
+                ".desc1"
+              ).textContent = `${current.uv.toFixed(1)} UV`;
+
+              // 3. Humidity & Dew Point (third card)
+              const humidityCard = document.querySelectorAll(".review-card")[2];
+              humidityCard.querySelector(
+                ".desc1"
+              ).textContent = `${current.humidity}%`;
+
+              // Calculate dew point (simple formula)
+              const dewPoint = (
+                current.temp_c -
+                (100 - current.humidity) / 5
+              ).toFixed(1);
+              humidityCard.querySelector(
+                ".desc2"
+              ).textContent = `The dew point is ${dewPoint}° now`;
+
+              // 4. Visibility or Air Quality (fourth card)
+              const visibilityCard =
+                document.querySelectorAll(".review-card")[3];
+              visibilityCard.querySelector(
+                ".desc1"
+              ).textContent = `${current.vis_km} km`;
+              visibilityCard.querySelector(
+                ".desc2"
+              ).textContent = `Visibility in current weather`;
+            });
+          })
+          .catch((error) => {
+            console.error("Weather fetch error:", error);
+            alert("Could not find weather for that location.");
+          });
+      }
+
+      // Listen for Enter key on the search input
+      const searchInput = document.querySelector(".search-input");
+      searchInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          const city = searchInput.value.trim();
+          if (city) {
+            fetchWeather(city);
+          }
+        }
+      });
+
+      // Load default city on page load
+      window.addEventListener("load", () => {
+        fetchWeather("Dhaka");
+      });
+    </script>
+  </body>
+</html>
