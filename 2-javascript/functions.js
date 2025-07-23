@@ -17,6 +17,7 @@ function sayHello() {
     console.log("hello")
 }
 
+
 sayHello() // invoking the function
 
 /*

@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f4;
+ color: #333;
+}
+
+/* Header and Navigation */
+header {
+ background-color: #4CAF50;
+ color: white;
+ padding: 20px 0;
+}
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px 20px;
+}
+
+.logo {
+ font-size: 2em;
+ font-weight: bold;
+}
+
+.nav-links {
+ list-style: none;
+ display: flex;
+}
+
+.nav-links li {
+ margin-left: 20px;
+}
+
+.nav-links a {
+ color: white;
+ text-decoration: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+
+
+}
+
+.hamburger .line {
+ width: 25px;
+ height: 3px;
+ background-color: white;
+ margin: 3px 0;
+}
+
+/* Hero Section */
+.hero {
+ display: flex; 
+ justify-content: center;
+ text-align: center;
+ padding: 50px 20px;
+ background-image: url('https://cdn.pixabay.com/photo/2020/07/10/05/34/cherries-5389573_640.jpg');
+ 
+ 
+
+}
+
+.hero-content {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px 20px;
+    border-radius: 20px;
+
+}
+
+.hero h1 {
+ font-size: 2.5em;
+ margin-bottom: 20px;
+}
+
+.hero p {
+ font-size: 1.2em;
+ margin-bottom: 30px;
+}
+
+.hero button {
+ background-color: #333;
+ color: white;
+ padding: 10px 20px;
+ border-radius: 10px;
+ cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/*section menu */
+#Menu {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+.card-container {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
+
+.card {
+ width: 300px;
+ background-color: white;
+ margin: 20px;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+ width: 100%;
+ border-radius: 8px;
+ margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+/* Featured Section */
+#featured {
+ padding: 30px 20px;
+ text-align: center;
+}
+
+
+
+.card-container {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
+
+.card {
+ width: 300px;
+ background-color: white;
+ margin: 20px;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+ width: 100%;
+ border-radius: 8px;
+ margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+ padding: 30px 20px;
+ text-align: center;
+ background-color: #f0f0f0;
+}
+
+#contact form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+#contact input,
+#contact textarea {
+ width: 100%;
+ max-width: 400px;
+ padding: 10px;
+ margin: 10px 0;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+}
+
+#contact button {
+ background-color: #4CAF50;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+ border-radius: 4px;
+}
+
+/* Footer */
+footer {
+ background-color: #333;
+ color: white;
+ text-align: center;
+ padding: 20px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    background: #111;
+}
+
+.social-media {
+ margin-bottom: 10px;
+}
+
+.social-media a {
+ display: inline-block;
+ margin: 0 10px;
+}
+
+.social-media img {
+ width: 30px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ text-align: center;
+ }
+
+ .nav-links li {
+ margin: 10px 0;
+ }
+
+ .hamburger {
+ display: flex;
+ }
+
+ .card {
+ width: 100%;
+ }
+}
+
+/* Mobile devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        height: 50vh;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .body-content {
+        padding: 10px;
+    }
+}
+
+/* Tablets (max-width: 900px) */
+@media screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        height: 60vh;
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .body-content {
+        padding: 20px;
+    }
+}
+
+/* Large screens (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .hero {
+        height: 80vh;
+        padding: 50px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .body-content {
+        padding: 40px;
+    }
+}
+
