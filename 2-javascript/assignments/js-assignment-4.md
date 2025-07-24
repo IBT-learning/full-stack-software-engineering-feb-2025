@@ -12,7 +12,7 @@ You may do these challenges all together in one file, or in separate files, acco
 #### Extra challenges (you may any or all or none of these)
 
 - (this is actually a strings challenge) Try capitalizing only the first letter. There is no string method that does this, so you will need to utilize `.slice()`
-- Rather than simply logging each word in the array, try creating a new array and adding each capitalized word to it
+- Rather than simply logging each word in the array, try creating a new array a.nd adding each capitalized word to it
 - Add each capitalized word to a string instead of (or in addition to) an array
 
 ## Challenge #2
