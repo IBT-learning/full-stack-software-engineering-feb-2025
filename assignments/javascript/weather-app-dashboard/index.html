@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <h1>Weather Forecast</h1>
+        <form>
+            <input type="text" placeholder="Enter city name">
+            <button id=searchBtn><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+            <!-- <i class="fa-solid fa-bars"></i> -->
+    </nav>
+    <p id="delay-text">...data loading, please wait</p>
+    
+    <main>
+        <div class="left-content">
+            <div>
+                <p>Today</p>
+                <img id="icon" src="" />
+            </div>
+            <p id="temperature-value">-</p>
+            <p class="location"><i class="fa-solid fa-location-dot"></i><span id="location"></span></p>
+        </div>
+        <div class="right-content">
+            <p id="time">-</p>
+            <p id="time-nature">Sunrise time</p>
+        </div>
+    </main>
+
+    <section class="weather-highlight">
+        <h2>-</h2>
+        <div class="weather-highlight_items">
+            <div id="uv-index">
+                <p class="top-label">UV Index</p>
+                <h3>-</h3>
+                <p class="bottom-label">-</p>
+            </div>
+            <div id="wind-status">
+                <p class="top-label">Wind Status</p>
+                <h3>-<span>km/h</span></h3>
+                <p class="bottom-label">-</p>
+            </div>
+            <div class="sunsetting">
+                <p class="top-label">Sunrise and Sunset</p>
+                <p id="sunrise"><i class="fa-solid fa-sun"></i><span>-</span></p>
+                <p id="sunset"><i class="fa-solid fa-cloud-sun"></i><span>-</span></p>
+            </div>
+            <div id="humidity">
+                <p class="top-label">Humidity</p>
+                <h3>-</h3>
+                <p class="bottom-label">-</p>
+            </div>
+            <div id="visibility">
+                <p class="top-label">Visibility</p>
+                <h3>-</h3>
+                <p class="bottom-label">-</p>
+            </div>
+            <div id="air-quality">
+                <p class="top-label">Air Quality</p>
+                <h3>-</h3>
+                <p class="bottom-label">-</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="daily-forecast">
+       <h4>This week</h4>
+       <ul class="daily-forecast_data"></ul>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
