@@ -1,14 +1,182 @@
-<div class="header-container">
- <div class="left-side">
-  <div class="logo">
-    <img src="logo.jpg" alt="Company Logo" />
-  </div>
- </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweethours Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- <nav class="navbar">
+      <a href="#home" class="logo">Sweethours Stores</a>
 
- <div class="middle-side">
-    <div class="middle-side-sub-btn">
-      <button class="btn btn-primary">Shop Now</button>
- </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#all-products">All Products</a></li>
+        <li class="cart-wrapper">
+          <a href="#my-order" class="cart-link">
+            <i class="fas fa-shopping-cart cart-icon"></i>
+            <span id="cart-count" class="cart-badge">0</span>
+            <span class="cart-label">Cart</span>
+          </a>
+        </li>
+      </ul>
+    </nav> -->
+
+    <nav class="navbar">
+  <a href="#home" class="logo">Sweethours Store</a>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#all-products">All Products</a></li>
+    <li class="cart-wrapper">
+      <a href="#my-order" class="cart-link">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <span id="cart-count" class="cart-badge">0</span>
+        <span class="cart-label">Cart</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 
-</div>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Sweethours Store</h1>
+        <p>
+          Find your perfect match — Electronics, Fashion (men and women),
+          Jewelry, and more!
+        </p>
+        <a href="#search-category" class="hero-btn">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- Search + Category -->
+    <section id="search-category">
+      <div class="search-category">
+        <input type="text" id="search-input" placeholder="Search Products..." class="search-input" />
+        <select class="category-select">
+          <option value="">Choose Category</option>
+          <option value="electronics">Electronics</option>
+          <option value="men-clothing">Men's Clothing</option>
+          <option value="women-clothing">Women's Clothing</option>
+          <option value="jewelry">Jewelry</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="all-products" class="products">
+      <div id="product-list" class="product-list"></div>
+    </section>
+
+    <section id="my-order" class="my-order">
+      <h2>Cart Items</h2>
+      <div class="order-container">
+        <table class="order-table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Product</th>
+              <th>Unit(s)</th>
+              <th>Unit Price</th>
+              <th>Total Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="order-list">
+            <!-- Orders will be rendered here -->
+          </tbody>
+        </table>
+
+        <!-- Sidebar Checkout -->
+        <aside class="checkout-sidebar">
+          <h3>Checkout Summary</h3>
+          <p>
+            <strong>Total Items:</strong> <span id="checkout-items">0</span>
+          </p>
+          <p>
+            <strong>Total Price:</strong> $<span id="checkout-total">0.00</span>
+          </p>
+          <button class="pay-btn">Pay Now</button>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <p>&copy; 2025 Sweethours Stores, All right reserved.</p>
+      <div class="social-icons">
+        <a
+          href="https://web.whatsapp.com/"
+          aria-label="whatsapp"
+          target="_blank"
+          class="icon whatsapp"
+          title="WhatsApp"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a
+          href="http://facebook.com/stories/122099436320251175/UzpfSVNDOjY2NjUxOTY4MjQxOTQ2OQ==/"
+          aria-label="facebook"
+          target="_blank"
+          class="icon facebook"
+          title="Facebook"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://x.com/home"
+          aria-label="twitter"
+          target="_blank"
+          class="icon twitter"
+          title="Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/watch?v=G3e-cpL7ofc"
+          aria-label="youtube"
+          target="_blank"
+          class="icon youtube"
+          title="YouTube"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          href="http://linkedin.com/notifications/?filter=all"
+          aria-label="linkedin"
+          target="_blank"
+          class="icon linkedin"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/en/"
+          aria-label="tiktok"
+          target="_blank"
+          class="icon tiktok"
+          title="TikTok"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a
+          href="https://www.telegram.com/"
+          aria-label="telegram"
+          target="_blank"
+          class="icon telegram"
+          title="Telegram"
+          ><i class="fab fa-telegram-plane"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
