@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navBar max-width">
+        <h1 class="logo">
+          <a href="index.html">Logo</a>
+        </h1>
+        <ul class="links-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Posts</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="hamburger"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="mini-hero">
+        <div class="max-width mini-greet">
+          <h1 class="hero-title">Full Gist</h1>
+        </div>
+      </section>
+
+      <section class="post-detail-container">
+        <div class="max-width btn-container">
+          <button class="bck-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="bck-btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+              />
+            </svg>
+          </button>
+        </div>
+        <article class="max-width flex-post-container"></article>
+      </section>
+      <section class="mobile-nav hidden">
+        <div class="mobile-nav-container">
+          <div class="top-nav">
+            <h1>
+              <a href="index.html">Logo</a>
+            </h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="close-menu-bar"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+          <div class="bottom-nav">
+            <div class="top-links">
+              <a href="index.html">Home</a>
+              <a href="post.html">Post</a>
+              <a href="#">Contact</a>
+            </div>
+
+            <a href="#" class="signings">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="signup"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+              </svg>
+              Signup/Login
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="max-width">
+        <p class="copyright">Copyright &copy;2025 All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="post.js"></script>
+  </body>
+</html>
