@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog App</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyBlog</div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li><a href="posts.html">All Posts</a></li>
+            <li><button id="openFormBtn">Create Post</button></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to My Blog Site</h1>
+    </header>
+
+    <section class="featured-posts" id="featured-posts">
+        <h2>Featured Posts</h2>
+        <div class="posts-container" id="featured-container"></div>
+    </section>
+
+    <div class="popup-form" id="popupForm">
+        <form id="createPostForm">
+            <h3>Create New Post</h3>
+            <input type="text" id="title" placeholder="Title" required />
+            <textarea id="body" placeholder="Post content" required></textarea>
+            <button type="submit">Submit</button>
+            <button type="button" id="closeFormBtn">Cancel</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
