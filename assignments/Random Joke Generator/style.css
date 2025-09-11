@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  background: #fff8e1;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  min-width: 340px;
+  max-width: 420px;
+  width: 100%;
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+div:hover {
+  box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.18);
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #ff9800;
+  font-weight: 700;
+}
+
+#setup {
+  font-size: 1.18rem;
+  color: #24213d;
+  font-weight: 500;
+  margin: 1.5rem 0 1rem 0;
+  min-height: 50px;
+  transition: color 0.3s;
+}
+
+#punchline {
+  font-size: 1.1rem;
+  color: #546e7a;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  min-height: 30px;
+  transition: color 0.3s;
+}
+
+#nextJoke {
+  background: linear-gradient(90deg, #ff9800 0%, #f44336 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem 2.4rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 12px rgba(255, 152, 0, 0.14);
+  transition: background 0.3s, transform 0.1s;
+}
+
+#nextJoke:hover,
+#nextJoke:focus {
+  background: linear-gradient(90deg, #f44336 0%, #ff9800 100%);
+  transform: translateY(-2px) scale(1.03);
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  div {
+    min-width: 90vw;
+    padding: 1.5rem 0.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
